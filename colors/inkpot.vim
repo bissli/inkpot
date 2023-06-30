@@ -64,9 +64,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     hi Question       gui=BOLD   guifg=#ffcd00   guibg=NONE
 
     hi StatusLine     gui=BOLD   guifg=#b9b9b9   guibg=#3e3e5e
+    hi StatusLineTerm     gui=BOLD   guifg=#b9b9b9   guibg=#3e3e5e
     hi User1          gui=BOLD   guifg=#00ff8b   guibg=#3e3e5e
     hi User2          gui=BOLD   guifg=#7070a0   guibg=#3e3e5e
     hi StatusLineNC   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
+    hi StatusLineTermNC   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
     hi VertSplit      gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 
     hi WildMenu       gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
@@ -127,6 +129,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     hi doxygenSpecialMultilineDesc  gui=NONE guifg=#ad600b   guibg=NONE
     hi doxygenSpecialOnelineDesc    gui=NONE guifg=#ad600b   guibg=NONE
 
+    hi Transparent     guifg=#1e1e27 guibg=#1e1e27 
+
     if v:version >= 700
         hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
         hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
@@ -160,9 +164,11 @@ else
     exec "hi Question       cterm=BOLD   ctermfg=" . <SID>X(52) . " ctermbg=" . "NONE"
 
     exec "hi StatusLine     cterm=BOLD   ctermfg=" . <SID>X(85) . " ctermbg=" . <SID>X(81)
+    exec "hi StatusLineTerm     cterm=BOLD   ctermfg=" . <SID>X(85) . " ctermbg=" . <SID>X(81)
     exec "hi User1          cterm=BOLD   ctermfg=" . <SID>X(28) . " ctermbg=" . <SID>X(81)
     exec "hi User2          cterm=BOLD   ctermfg=" . <SID>X(39) . " ctermbg=" . <SID>X(81)
     exec "hi StatusLineNC   cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
+    exec "hi StatusLineTermNC   cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
     exec "hi VertSplit      cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
 
     exec "hi WildMenu       cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(38)
