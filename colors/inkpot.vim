@@ -131,23 +131,30 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     hi Transparent     guifg=#1e1e27 guibg=#1e1e27 
 
-    if v:version >= 700
-        hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
-        hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
-        hi PmenuSbar      gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
-        hi PmenuThumb     gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
+    hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
+    hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
+    hi PmenuSbar      gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
+    hi PmenuThumb     gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
-        hi SpellBad     gui=undercurl guisp=#cc6666
-        hi SpellRare    gui=undercurl guisp=#cc66cc
-        hi SpellLocal   gui=undercurl guisp=#cccc66
-        hi SpellCap     gui=undercurl guisp=#66cccc
+    hi SpellBad     gui=undercurl guisp=#cc6666
+    hi SpellRare    gui=undercurl guisp=#cc66cc
+    hi SpellLocal   gui=undercurl guisp=#cccc66
+    hi SpellCap     gui=undercurl guisp=#66cccc
 
-        hi MatchParen   gui=NONE      guifg=#cfbfad   guibg=#4e4e8f
-    endif
-    if v:version >= 703
-        hi Conceal      gui=NONE      guifg=#c080d0   guibg=NONE
-        hi ColorColumn  gui=NONE                      guibg=#2e2e2e
-    endif
+    hi MatchParen   gui=NONE      guifg=#cfbfad   guibg=#4e4e8f
+
+    hi Conceal      gui=NONE      guifg=#c080d0   guibg=NONE
+    hi ColorColumn  gui=NONE                      guibg=#2e2e2e
+
+    " Special for signcolumn=number
+  hi SignColumn  gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
+
+    " vim conflict markers plugin
+  hi ConflictMarkerBegin guibg=#2f7366
+  hi ConflictMarkerOurs guibg=#2e5049
+  hi ConflictMarkerTheirs guibg=#344f69
+  hi ConflictMarkerEnd guibg=#2f628e
+
 else
     if ! g:inkpot_black_background
         exec "hi Normal         cterm=NONE   ctermfg=" . <SID>X(79) . " ctermbg=" . <SID>X(80)
