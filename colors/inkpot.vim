@@ -41,6 +41,10 @@ hi StatusLineNC   cterm=NONE   ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b
 hi StatusLineTermNC cterm=NONE ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 hi VertSplit      cterm=NONE   ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 
+hi TabLine        cterm=NONE   ctermfg=250   ctermbg=182   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
+hi TabLineSel     cterm=BOLD   ctermfg=255   ctermbg=NONE  gui=BOLD   guifg=#eeeeee   guibg=NONE
+hi TabLineFill    cterm=NONE   ctermfg=250   ctermbg=182   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
+
 hi WildMenu       cterm=BOLD   ctermfg=255   ctermbg=61   gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
 hi MBENormal                 cterm=NONE   ctermfg=187   ctermbg=237   gui=NONE   guifg=#cfbfad   guibg=#2e2e3f
@@ -69,7 +73,7 @@ hi Visual         cterm=NONE   ctermfg=255   ctermbg=61   gui=NONE   guifg=#eeee
 
 hi Comment        cterm=NONE   ctermfg=172   ctermbg=NONE   gui=NONE   guifg=#cd8b00   guibg=NONE
 hi Constant       cterm=NONE   ctermfg=222   ctermbg=NONE   gui=NONE   guifg=#ffcd8b   guibg=NONE
-hi String         cterm=NONE   ctermfg=222   ctermbg=238    gui=NONE   guifg=#ffcd8b   guibg=#404040
+hi String         cterm=NONE   ctermfg=222   ctermbg=235    gui=NONE   guifg=#ffcd8b   guibg=#2e2e2e
 hi Error          cterm=NONE   ctermfg=231   ctermbg=52     gui=NONE   guifg=#ffffff   guibg=#6e2e2e
 hi Identifier     cterm=NONE   ctermfg=213   ctermbg=NONE   gui=NONE   guifg=#ff8bff   guibg=NONE
 hi Ignore         cterm=NONE   ctermfg=NONE  ctermbg=NONE   gui=NONE
