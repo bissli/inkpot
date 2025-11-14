@@ -40,6 +40,9 @@ hi User2          cterm=BOLD   ctermfg=103   ctermbg=238   gui=BOLD   guifg=#707
 hi StatusLineNC   cterm=NONE   ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 hi StatusLineTermNC cterm=NONE ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 hi VertSplit      cterm=NONE   ctermfg=250   ctermbg=238   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
+hi TabLine        cterm=NONE   ctermfg=250   ctermbg=182   gui=NONE   guifg=#b9b9b9   guibg=#c0b0bd
+hi TabLineSel     cterm=BOLD   ctermfg=255   ctermbg=NONE  gui=BOLD   guifg=#eeeeee   guibg=NONE
+hi TabLineFill    cterm=NONE   ctermfg=250   ctermbg=182   gui=NONE   guifg=#b9b9b9   guibg=#c0b0bd
 
 hi WildMenu       cterm=BOLD   ctermfg=255   ctermbg=61   gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
